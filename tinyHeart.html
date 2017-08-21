@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱心鱼小游戏</title>
+    <style>
+        body{
+            padding-top:10px;
+        }
+        .all_bg{
+            width:800px;
+            height:600px;
+            margin: 0 auto;
+        }
+        #allcanvas{
+            position: relative;
+            width:800px;
+            height:600px;
+            margin: 0;
+        }
+        #c1{
+            position: absolute;
+            left: 0;
+            top:0;
+            z-index:1;
+        }
+        #c2{
+            position: absolute;
+            left: 0;
+            top:0;
+            z-index:0;
+            background: url("./src/background.jpg");
+        }
+
+    </style>
+    <script src="js/commonFunctions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/ane.js"></script>
+    <script src="js/fruits.js"></script>
+    <script src="js/mom.js"></script>
+    <script src="js/baby.js"></script>
+    <script src="js/collision.js"></script>
+</head>
+<body>
+<div class="all_bg">
+    <di·v id="allcanvas">
+        <!--//z-index:1;前一层：鱼，尘埃，UI，圆圈-->
+        <canvas id="c1" width="800" height="600">你的浏览器版本过低</canvas>
+        <!--//z-index:0;后一层：背景，ane,fruits-->
+        <canvas id="c2" width="800" height="600">你的浏览器版本过低</canvas>
+    </div>
+</div>
+
+</body>
+</html>
